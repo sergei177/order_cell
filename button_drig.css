@@ -1,0 +1,86 @@
+@keyframes droj {
+    5% {
+        transform: translateX(9px);
+
+    }
+    8% {
+        transform: translateX(-9px);
+
+    }
+    10% {
+        transform: translateX(6px);
+
+    }
+    12% {
+        transform: translateX(-6px);
+
+    }
+    14% {
+        transform: translateX(3px);
+
+    }
+    14% {
+        transform: translateX(-3px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+
+}
+
+.div1 {
+    position: fixed;
+    left: 100px;
+}
+
+.div2 {
+
+    width: 50px;
+    height: 50px;
+    background-image: url("smartphone-ringing.png");
+    background-repeat: no-repeat;
+    background-color: aquamarine;
+    background-position: center;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    
+    animation-name: droj;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    z-index:1;
+
+}
+
+.div3 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: aquamarine;
+    border-radius: 23px 23px 23px 23px;
+    transition: 0.5s;
+    box-sizing: border-box;
+    align-items: center;
+    opacity: .3;
+    text-transform: uppercase;
+    display: none;
+    padding-top: 15px;
+    }
+
+.div1:hover .div3 {
+    width: 260px;
+    height: 50px;
+    opacity: .5;
+    display: inline-block;
+    
+}
+
+
+.div3 a.text{
+    text-decoration: none;
+    width: 130px;
+    color: black;
+    padding-left: 70px;
+     
+}
